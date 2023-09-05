@@ -1,0 +1,5 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.25)
+project(lab01 VERSION 1.0)
+add_library(jogadores STATIC jogadores.c)
+add_executable(${CMAKE_PROJECT_NAME} principal.c)
+target_link_libraries(${CMAKE_PROJECT_NAME} jogadores)

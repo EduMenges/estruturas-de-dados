@@ -1,0 +1,10 @@
+#ifndef ESTRUTURA_DE_DADOS_TRABALHO_FINAL_DADOS_H_
+#define ESTRUTURA_DE_DADOS_TRABALHO_FINAL_DADOS_H_
+
+struct InfoNo {
+    int valor;
+};
+
+typedef struct InfoNo InfoNo;
+
+#endif //ESTRUTURA_DE_DADOS_TRABALHO_FINAL_DADOS_H_

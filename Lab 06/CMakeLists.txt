@@ -1,0 +1,6 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.25)
+project(lab06 VERSION 1.0)
+add_library(ABP abp.c)
+add_library(QUESTOES questoes.c)
+add_executable(${CMAKE_PROJECT_NAME} main.c)
+target_link_libraries(${CMAKE_PROJECT_NAME} ABP QUESTOES)

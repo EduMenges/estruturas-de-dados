@@ -1,0 +1,7 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.25)
+project(TrabalhoFinal VERSION 1.0)
+ADD_LIBRARY(ABP abp.c)
+ADD_LIBRARY(AVL avl.c)
+ADD_LIBRARY(LSE lse.c)
+add_executable(${CMAKE_PROJECT_NAME} main.c)
+target_link_libraries(${CMAKE_PROJECT_NAME} ABP AVL LSE)

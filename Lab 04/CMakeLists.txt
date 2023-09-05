@@ -1,0 +1,5 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.25)
+project(lab04 VERSION 1.0)
+add_library(LDEC ldec.c)
+add_executable(${CMAKE_PROJECT_NAME} principal.c)
+target_link_libraries(${CMAKE_PROJECT_NAME} LDEC)
